@@ -1,0 +1,5 @@
+run_id,model_name,cv_n_splits,cv_shuffle,cv_random_state,train_test_random_state,test_size,best_params,best_cv_rmse,test_rmse,test_mae,test_r2
+Ridge_eaeb9983,Ridge,5,True,42,42,0.2,"{""model__alpha"": 100.0}",9.932964573904558,9.787183630007236,7.905899851686934,0.0704554947218508
+Lasso_3bebe5f4,Lasso,5,True,42,42,0.2,"{""model__alpha"": 0.01}",9.934942323063812,9.78599959441297,7.90525581505853,0.0706803903092196
+Ridge_cf9f0d79,Ridge,5,True,42,42,0.2,"{""model__alpha"": 100.0}",9.932964573904558,9.787183630007236,7.905899851686934,0.0704554947218508
+Lasso_1f16245f,Lasso,5,True,42,42,0.2,"{""model__alpha"": 0.01}",9.934942323063813,9.78599959441297,7.90525581505853,0.07068039030921969

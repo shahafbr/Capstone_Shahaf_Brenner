@@ -1,0 +1,16 @@
+{
+  "model_name": "Lasso",
+  "param_grid": {},
+  "best_params": {
+    "model__alpha": 0.01
+  },
+  "refit_metric": "rmse",
+  "scoring": [
+    "rmse",
+    "mae",
+    "r2"
+  ],
+  "test_size": 0.2,
+  "train_test_random_state": 42,
+  "selection_mode": "fixed_hyperparameters"
+}

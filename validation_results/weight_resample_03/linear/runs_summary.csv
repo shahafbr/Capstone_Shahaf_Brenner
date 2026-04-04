@@ -1,0 +1,3 @@
+run_id,model_name,cv_n_splits,cv_shuffle,cv_random_state,train_test_random_state,test_size,best_params,best_cv_rmse,test_rmse,test_mae,test_r2
+OLS_faf559cf,OLS,5,True,42,42,0.2,{},5.5862784241593495,5.535777344164343,4.400656509925769,0.2478572418331889
+OLS_f66d5ec0,OLS,5,True,42,42,0.2,{},5.5862784241593495,5.535777344164343,4.400656509925769,0.2478572418331889

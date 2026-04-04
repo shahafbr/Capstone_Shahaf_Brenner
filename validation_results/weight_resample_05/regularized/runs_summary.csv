@@ -1,0 +1,3 @@
+run_id,model_name,cv_n_splits,cv_shuffle,cv_random_state,train_test_random_state,test_size,best_params,best_cv_rmse,test_rmse,test_mae,test_r2
+Ridge_63bd20bb,Ridge,5,True,42,42,0.2,"{""model__alpha"": 100.0}",5.549602112965336,5.561838683869637,4.461298353059485,0.1846591847721385
+Lasso_1ad4abaf,Lasso,5,True,42,42,0.2,"{""model__alpha"": 0.01}",5.550434504636393,5.561290380685956,4.46052955472951,0.18481993446453548

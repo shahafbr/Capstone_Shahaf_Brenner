@@ -1,0 +1,19 @@
+{
+  "model_name": "GradientBoosting",
+  "param_grid": {},
+  "best_params": {
+    "model__learning_rate": 0.05,
+    "model__max_depth": 2,
+    "model__n_estimators": 300,
+    "model__subsample": 0.8
+  },
+  "refit_metric": "rmse",
+  "scoring": [
+    "rmse",
+    "mae",
+    "r2"
+  ],
+  "test_size": 0.2,
+  "train_test_random_state": 42,
+  "selection_mode": "fixed_hyperparameters"
+}

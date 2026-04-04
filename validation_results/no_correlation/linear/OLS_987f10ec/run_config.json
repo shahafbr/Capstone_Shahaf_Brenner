@@ -1,0 +1,14 @@
+{
+  "model_name": "OLS",
+  "param_grid": {},
+  "best_params": {},
+  "refit_metric": "rmse",
+  "scoring": [
+    "rmse",
+    "mae",
+    "r2"
+  ],
+  "test_size": 0.2,
+  "train_test_random_state": 42,
+  "selection_mode": "fixed_hyperparameters"
+}
