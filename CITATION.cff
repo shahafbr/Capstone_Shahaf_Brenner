@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+type: software
+
+title: "Capstone_Shahaf_Brenner: AI-Driven Early Burnout Risk Detection from Digital Work Patterns"
+abstract: "Proof-of-concept ML pipeline for AI-driven early burnout risk detection from employee digital work patterns using expert elicitation, synthetic data generation, comparative model evaluation, and robustness analysis."
+
+authors:
+  - family-names: "Brenner"
+    given-names: "Shahaf"
+
+keywords:
+  - "burnout"
+  - "machine learning"
+  - "people analytics"
+  - "digital work metadata"
+  - "synthetic data"
+  - "early risk detection"
+  - "workforce optimization"
+
+license: "MIT"
+
+repository-code: "https://github.com/shahafbr/Capstone_Shahaf_Brenner"
+url: "https://github.com/shahafbr/Capstone_Shahaf_Brenner"
+
+preferred-citation:
+  type: thesis
+  authors:
+    - family-names: "Brenner"
+      given-names: "Shahaf"
+  title: "AI-Driven Early Burnout Risk Detection from Digital Work Patterns for Proactive Workforce Optimization"
+  institution: "IE University, School of Science & Technology"
+  year: 2026
