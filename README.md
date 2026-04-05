@@ -4,7 +4,7 @@ Proof-of-concept ML pipeline for AI-driven early burnout risk detection from emp
 
 
 ## Executive summary
-This repository contains the full code implementation for my bachelor thesis:
+This repository contains the full code implementation for my bachelor's thesis:
 **Thesis:** AI-Driven Early Burnout Risk Detection from Digital Work Patterns for Proactive Workforce Optimization  
 **Author:** Shahaf Brenner  
 **Institution / Program:** IE University, School of Science & Technology / BCSAI
@@ -117,13 +117,13 @@ The thesis reports that **Gradient Boosting** achieved the best overall performa
 │   │   └── runs_summary.csv
 |   |
 │   ├── regularized/
-│   │   ├── Lasso_78d11b6f/   (same files as OLS exmple)
-│   │   ├── Ridge_492572bf/   (same files as OLS exmple)
+│   │   ├── Lasso_78d11b6f/   (same files as OLS example)
+│   │   ├── Ridge_492572bf/   (same files as OLS example)
 │   │   └── runs_summary.csv
 |   |
 │   └── tree/
-│       ├── GradientBoosting_35fbf139/ (same files as OLS exmple)
-│       ├── RandomForest_aeaeb022/     (same files as OLS exmple)
+│       ├── GradientBoosting_35fbf139/ (same files as OLS example)
+│       ├── RandomForest_aeaeb022/     (same files as OLS example)
 │       └── runs_summary.csv
 |
 ├── src/
@@ -183,13 +183,13 @@ The thesis reports that **Gradient Boosting** achieved the best overall performa
 │   |   │   └── runs_summary.csv
 |   │   |
 │   |   ├── regularized/
-│   │   |   ├── Lasso_XXXXXXXX/  (same files as OLS exmple)
-│   │   |   ├── Ridge_XXXXXXXX/  (same files as OLS exmple)
+│   │   |   ├── Lasso_XXXXXXXX/  (same files as OLS example)
+│   │   |   ├── Ridge_XXXXXXXX/  (same files as OLS example)
 │   |   │   └── runs_summary.csv
 │   |   │   
 │   |   └── tree/
-│   │       ├── GradientBoosting_XXXXXXXX/  (same files as OLS exmple)
-│   │       ├── RandomForest_XXXXXXXX/      (same files as OLS exmple)
+│   │       ├── GradientBoosting_XXXXXXXX/  (same files as OLS example)
+│   │       ├── RandomForest_XXXXXXXX/      (same files as OLS example)
 │   |       └── runs_summary.csv
 |   |
 │   └── etc. (1 folder for each circularity test model results)
@@ -203,13 +203,13 @@ The thesis reports that **Gradient Boosting** achieved the best overall performa
 ## Data & inputs
 1. **Expert survey files -** These files contain the structured expert responses used to define feature importance, frequency, directionality, and risk ranges:
     - **Dataset name:** Importance.xlsx, Frequency.xlsx, Direction.xlsx, Green_Zone.xlsx, Red_Zone.xlsx.
-    - **Type:** primary / original survey datasets.
+    - **Type:** primary expert-elicitation inputs.
     - **Where it comes from:** Expert survey results.
     - **File(s) path:** [`data/split_by_stable_keys/`](data/split_by_stable_keys/)
 
 2. **Aggregated expert schema -** This file contains the aggregated feature-level parameters derived from the expert surveys:
     - **Dataset name:** aggregated_feature_schema.csv.
-    - **Type:** primary / survey dataset.
+    - **Type:** processed primary expert-elicitation inputs.
     - **Where it comes from:** processed expert knowledge base.
     - **File(s) path:** [`data/Expert_Aggregated_DB/aggregated_feature_schema.csv`](data/Expert_Aggregated_DB/aggregated_feature_schema.csv)
 
@@ -222,7 +222,7 @@ The thesis reports that **Gradient Boosting** achieved the best overall performa
 4.  **Robustness-analysis datasets -** Alternative synthetic datasets created under modified assumptions such as higher noise, lower noise, no correlation, alpha perturbations, feature removal, and repeated weight resampling:
     - **Dataset name:** Robustness analysis DBs.
     - **Type:** Synthetic.
-    - **Where it comes from:** Generated as specifide in the methodology using aggregated_feature_schema.csv as base (alterntive synthetic generation parameters).
+    - **Where it comes from:** Generated as specified in the methodology using aggregated_feature_schema.csv as base (alternative synthetic generation parameters).
     - **File(s) path:** 
         - [`alpha_minus_10`](data/DB/alpha_minus_10/)
         - [`alpha_plus_10`](data/DB/alpha_plus_10/)
@@ -248,11 +248,11 @@ This repository does **not** use real employee monitoring data.
 
 Important scope notes:
 
-- the project is based on **synthetic employee metadata**
-- it models **digital work metadata**, not message content or private communications
-- it is a **research proof of concept**, not a deployment-ready monitoring system
-- the output should be interpreted as **early-risk approximation under synthetic conditions**, not diagnosis
-- any real-world extension would require careful handling of privacy, consent, fairness, transparency, and human oversight
+- The project is based on **synthetic employee metadata**
+- It models **digital work metadata**, not message content or private communications
+- It is a **research proof of concept**, not a deployment-ready monitoring system
+- The output should be interpreted as **early-risk approximation under synthetic conditions**, not diagnosis
+- Any real-world extension would require careful handling of privacy, consent, fairness, transparency, and human oversight
 
 ---
 ## Method overview
@@ -318,6 +318,18 @@ flowchart TD
 - Python 3.10 --> **3.11.9 (Recomended)**
 - pip
 - packages listed in `requirements.txt`
+
+### Important note for macOS/Linux users
+
+This repository was developed primarily on **Windows**. If you are running it on **macOS** or **Linux**, you may need to update hard-coded file paths in the code before running the pipeline.
+
+Please check for:
+
+- Windows-style path separators (`\`)
+- Windows-specific absolute paths
+- shell/activation commands that differ across operating systems
+
+For portability, path handling should ideally use `pathlib.Path` or `os.path.join()`.
 
 ### Clone the repository
 
