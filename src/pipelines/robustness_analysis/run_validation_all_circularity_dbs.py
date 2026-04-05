@@ -15,7 +15,7 @@ SCENARIOS = [
     ("weight_resample_02", r"data\DB\weight_resample_02\synthetic_full_5000.csv"),
     ("weight_resample_03", r"data\DB\weight_resample_03\synthetic_full_5000.csv"),
     ("weight_resample_04", r"data\DB\weight_resample_04\synthetic_full_5000.csv"),
-    ("weight_resample_05", r"data\DB\weight_resample_05\synthetic_full_1000.csv"),
+    ("weight_resample_05", r"data\DB\weight_resample_05\synthetic_full_5000.csv"),
 ]
 
 
